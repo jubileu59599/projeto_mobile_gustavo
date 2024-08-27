@@ -10,11 +10,12 @@ function adicionarValor() {
   celula.textContent = valor;
 
   document.getElementById('valor').value = '';
+  document.getElementById('valor').focus();
 }
 
 function mostrarPares() {
   const tabela = document.getElementById("tabelaPares").getElementsByTagName("tbody")[0];
-  
+
   // Limpa a tabela antes de adicionar novos valores
   tabela.innerHTML = '';
 
